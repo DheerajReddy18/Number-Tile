@@ -1,4 +1,4 @@
-document.getElementById("body").style.display="none";  
+  document.getElementById("body").style.display="none";  
   document.getElementById("besttime").style.display="none";  
   var c=5;
   
@@ -107,22 +107,7 @@ var node=document.createElement("LI");
 var textnode=document.createTextNode(JSON.stringify(converter(bestlist[i])));
 node.appendChild(textnode);
 document.getElementById("besttime").appendChild(node);
-
 }
  document.getElementById("besttime").style.display="block";
 }
 
-function converter(x)
-{
-       console.log(x);
-        min=parseInt(Math.floor(x/100/60));
-	    sec=parseInt(Math.floor(x/100));
-	    msec=parseInt(x%100);
-	   if (min<10)
-	      min="0"+min;
-	   if (sec>=60)
-	      sec=sec%60;
-	   if (sec<10)
-	      sec="0"+sec;
-	   return min+ ":" + sec + ":" + msec; 
- }
