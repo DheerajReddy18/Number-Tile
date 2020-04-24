@@ -1,0 +1,44 @@
+#instr{
+	         font-size:30px;
+	        }
+    #timer{
+                        position:absolute;
+                        text-align:center;
+			font-family:sevenSegment;
+			top:50%;
+			left:50%;
+			fontsize:50px;
+		   }
+#best,#clock{
+             font-size:30px;   
+            }	   
+          h1{
+             font-size:50px;
+             color:black;
+            }
+        body{
+            background-color:darkslategrey;
+            font-size:35px;
+            }
+       table{
+            border: 5px solid green;
+            background-color:green;
+            color:green;
+            font-size:60px;
+            text-align:center;
+            }
+         td {
+            padding: 10px;
+            background-color:black;
+            text-align:center;
+            }
+          p{
+            color:black;
+            text-align:center;
+            font-size:35px;
+           }
+         ol{ 
+            list-style-position:inside;  
+                
+  
+           } 
