@@ -2,12 +2,12 @@
 	         font-size:30px;
 	        }
     #timer{
-                        position:absolute;
-                        text-align:center;
-			font-family:sevenSegment;
-			top:50%;
-			left:50%;
-			fontsize:50px;
+                      position:absolute;
+                      text-align:center;
+	              font-family:sevenSegment;
+		      top:50%;
+		      left:50%;
+		      fontsize:50px;
 		   }
 #best,#clock{
              font-size:30px;   
