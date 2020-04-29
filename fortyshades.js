@@ -4,8 +4,8 @@
   
   function converter(x)
        {
-       console.log(x);
-        min=parseInt(Math.floor(x/100/60));
+      
+            min=parseInt(Math.floor(x/100/60));
 	    sec=parseInt(Math.floor(x/100));
 	    msec=parseInt(x%100);
 	   if (min<10)
@@ -51,7 +51,7 @@ function myFunction(x) {
 	}
 	if(l==41){
 	 stop();
-	 console.log(l);
+	 ;
     }
 }
   var min,sec,msec;
@@ -85,8 +85,6 @@ function timer(){
 function stop(){
    status=0;
    clearInterval(stopclock);
-   console.log("hi");
-   console.log(time);
    storage();
    }
 
