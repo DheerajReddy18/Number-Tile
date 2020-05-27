@@ -1,8 +1,8 @@
-  document.getElementById("body").style.display="none";  
+  document.getElementById("body").style.display="none";   //hiding the body intially
   document.getElementById("besttime").style.display="none";  
   var c=5;
   
-  function converter(x)
+  function converter(x)         //converter function to convrt time into min,sec,msec
        {
       
             min=parseInt(Math.floor(x/100/60));
@@ -16,7 +16,7 @@
 	      sec="0"+sec;
 	   return min+ ":" + sec + ":" + msec; 
       }
-  var count=setInterval(function(){
+  var count=setInterval(function(){                //intial countdown function
       c--;
 	 if(c > 0){
 	    id=document.getElementById("timer");
@@ -34,7 +34,7 @@
  }, 1000);	
   var y=21;
   var l=1;
-function myFunction(x) {
+function myFunction(x) {        //function to chnage numbers on click
     var t=x.cellIndex;
     var z=x.parentElement.rowIndex;
     var a=tbl.rows[z].cells[t].getAttribute("value");
@@ -63,7 +63,7 @@ function myFunction(x) {
    timer();
   }
  
-function timer(){
+function timer(){        //stop clock to measure the time taken
   if(status==1){
     stopclock= setInterval(function(){
 	   time++;
@@ -88,7 +88,7 @@ function stop(){
    storage();
    }
 
-function storage(){
+function storage(){                //storing 5 high scores in locsl storage and retrieving them
 if(localStorage.getItem("bestfive") != null )
  bestfive=JSON.parse(localStorage.getItem("bestfive"));
 else
