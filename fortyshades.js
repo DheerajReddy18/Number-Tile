@@ -2,7 +2,7 @@
   document.getElementById("besttime").style.display="none";  
   var c=5;
   
-  function converter(x)         //converter function to convrt time into min,sec,msec
+  function converter(x)         //converter function to convert time into min,sec,msec
        {
       
             min=parseInt(Math.floor(x/100/60));
